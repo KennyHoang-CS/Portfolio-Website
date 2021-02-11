@@ -1,4 +1,5 @@
 const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+let direction = null;
 
 portfolioItems.forEach(portfolioItem => {
     portfolioItem.addEventListener('mouseover', ()=>{
@@ -8,14 +9,20 @@ portfolioItems.forEach(portfolioItem => {
         portfolioItem.childNodes[1].classList.remove('img-darken');
     })
     portfolioItem.addEventListener('click', e=>{
-        console.log(e.target.parentNode.id)
         
-        if (e.target.parentNode.id === "more-projects"){
+        direction = e.target.parentNode;
+
+        if(e.target.parentNode.className === 'img-text-wrapper'){
+            direction = direction.parentNode;
+        }
+        
+        if (direction.id === "more-projects"){
             window.location.href = "https://github.com/KennyHoang-CS";
         }
         else {
-            window.location.href = `https://kennyhoang-cs.github.io/${e.target.parentNode.id}/`;
+            window.location.href = `https://kennyhoang-cs.github.io/${direction.id}/`;
         }
+        
     })
 })
 
