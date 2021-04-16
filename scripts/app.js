@@ -19,6 +19,9 @@ portfolioItems.forEach(portfolioItem => {
         if (direction.id === "more-projects"){
             window.location.href = "https://github.com/KennyHoang-CS";
         }
+        else if (direction.id === 'anime-platform') {
+            window.location.href = "https://anime-platform.herokuapp.com/";
+        }
         else {
             window.location.href = `https://kennyhoang-cs.github.io/${direction.id}/`;
         }
