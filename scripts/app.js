@@ -22,6 +22,9 @@ portfolioItems.forEach(portfolioItem => {
         else if (direction.id === 'anime-platform') {
             window.location.href = "https://anime-platform.herokuapp.com/";
         }
+        else if (direction.id === 'react-jobly') {
+            window.location.href = "http://kennyhoang-jobly.surge.sh/";
+        }
         else {
             window.location.href = `https://kennyhoang-cs.github.io/${direction.id}/`;
         }

@@ -64,6 +64,13 @@ body{
     grid-template-columns: repeat(2, 1fr);
 }
 
+@media only screen and (max-width: 600px){ 
+    .portfolio-items-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
 .portfolio-item-wrapper{
     position: relative;
 }
@@ -112,8 +119,23 @@ body{
     grid-template-columns: 1fr 1fr;
 }
 
+@media only screen and (max-width: 600px){ 
+    .two-column-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
 .profile-image-wrapper img{
     width: 100%;
+}
+
+@media only screen and (max-width: 600px){ 
+    .profile-image-wrapper img{
+        height: 300px;
+        width: 300px;
+        margin-left: 20%;
+    }
 }
 
 .profile-content-wrapper{
