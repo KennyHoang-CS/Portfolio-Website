@@ -179,3 +179,16 @@ body{
 #github{
     color: #4078c0;
 }
+
+
+/** Resume Styles **/
+
+.resume-container {
+    display: grid;
+    justify-content: center;
+    background-color: rgba(235, 232, 232, 0.5);
+}
+
+.resume-wrapper {
+    margin: 5% 0;
+}
